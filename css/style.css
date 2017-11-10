@@ -57,6 +57,9 @@ body {
 .slideshow .img-wrapper .item .caption h1 {
   font-weight: 300;
 }
+.slideshow .img-wrapper:hover .controll {
+  opacity: .5;
+}
 .slideshow .controll {
   position: absolute;
   top: 0;
@@ -104,9 +107,6 @@ body {
 }
 .slideshow .indicators span.active {
   background-color: rgba(0, 0, 0, 0.5);
-}
-.slideshow:hover .controll {
-  opacity: .5;
 }
 
 /*# sourceMappingURL=style.css.map */

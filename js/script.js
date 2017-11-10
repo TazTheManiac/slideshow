@@ -4,7 +4,6 @@ var nrOfImages    = slideList.length;
 var intervalTime  = document.querySelector("#slideshow").dataset.timer;
 var timer         = setInterval(next, intervalTime);
 var current       = document.querySelector("#slideshow").dataset.start - 1;
-console.log(nrOfImages);
 
 slideList[current].classList.add("active");
 
@@ -50,10 +49,10 @@ for (var i = 0; i < slideIndicators.length; i++) {
 document.querySelector("#slideshow [data-role='left']").addEventListener("click", prev);
 document.querySelector("#slideshow [data-role='right']").addEventListener("click", next);
 
-document.querySelector('#slideshow').addEventListener("mouseenter", function() {
+document.querySelector('#slideshow > .img-wrapper').addEventListener("mouseenter", function() {
   clearInterval(timer);
 });
 
-document.querySelector('#slideshow').addEventListener("mouseleave", function() {
+document.querySelector('#slideshow > .img-wrapper').addEventListener("mouseleave", function() {
   timer = setInterval(next, intervalTime);
 });
