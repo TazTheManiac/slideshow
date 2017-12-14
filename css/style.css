@@ -11,8 +11,11 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
-  padding: .5rem 1rem;
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 960px;
 }
 
 .slideshow {

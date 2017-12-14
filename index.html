@@ -11,61 +11,64 @@
   </head>
   <body>
 
-    <div class="slideshow" id="slideshow" data-timer="8000" data-start="1">
-      <div class="img-wrapper">
-        <div class="item">
-          <img src="https://source.unsplash.com/random/1280x720?sig=1">
-          <div class="caption">
-            <h1>Image 1 caption</h1>
+    <div class="container">
+      <div class="slideshow" id="slideshow" data-timer="8000" data-start="1">
+        <div class="img-wrapper">
+          <div class="item">
+            <img src="https://source.unsplash.com/random/1280x720?sig=1">
+            <div class="caption">
+              <h1>Image 1 caption</h1>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <img src="https://source.unsplash.com/random/1280x720?sig=2">
-          <div class="caption">
-            <h1>Image 2 caption</h1>
+          <div class="item">
+            <img src="https://source.unsplash.com/random/1280x720?sig=2">
+            <div class="caption">
+              <h1>Image 2 caption</h1>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <img src="https://source.unsplash.com/random/1280x720?sig=3">
-          <div class="caption">
-            <h1>Image 3 caption</h1>
+          <div class="item">
+            <img src="https://source.unsplash.com/random/1280x720?sig=3">
+            <div class="caption">
+              <h1>Image 3 caption</h1>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <img src="https://source.unsplash.com/random/1280x720?sig=4">
-          <div class="caption">
-            <h1>Image 4 caption</h1>
+          <div class="item">
+            <img src="https://source.unsplash.com/random/1280x720?sig=4">
+            <div class="caption">
+              <h1>Image 4 caption</h1>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <img src="https://source.unsplash.com/random/1280x720?sig=5">
-          <div class="caption">
-            <h1>Image 5 caption</h1>
+          <div class="item">
+            <img src="https://source.unsplash.com/random/1280x720?sig=5">
+            <div class="caption">
+              <h1>Image 5 caption</h1>
+            </div>
           </div>
+
+          <div class="controll" data-role="left">
+            <svg viewBox="0 0 24 24">
+              <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+            </svg>
+          </div>
+          <div class="controll" data-role="right">
+            <svg viewBox="0 0 24 24">
+              <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+            </svg>
+          </div>
+
         </div>
 
-        <div class="controll" data-role="left">
-          <svg viewBox="0 0 24 24">
-            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
-          </svg>
-        </div>
-        <div class="controll" data-role="right">
-          <svg viewBox="0 0 24 24">
-            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-          </svg>
+        <div class="indicators">
+          <span class="active" data-slide-to="1"></span>
+          <span data-slide-to="2"></span>
+          <span data-slide-to="3"></span>
+          <span data-slide-to="4"></span>
+          <span data-slide-to="5"></span>
         </div>
 
       </div>
-
-      <div class="indicators">
-        <span class="active" data-slide-to="1"></span>
-        <span data-slide-to="2"></span>
-        <span data-slide-to="3"></span>
-        <span data-slide-to="4"></span>
-        <span data-slide-to="5"></span>
-      </div>
-
     </div>
+
 
     <script type="text/javascript" src="js/script.js"></script>
   </body>
