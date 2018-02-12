@@ -1,0 +1,117 @@
+/* Presentation -------------------- */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  color: #444;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* Styling ------------------------- */
+.slideshow {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.slideshow .slides-wrapper {
+  position: relative;
+  background-color: #ddd;
+}
+
+.slideshow .slides-wrapper .slide {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 9;
+  transition: opacity 800ms ease-in-out;
+}
+
+.slideshow .slides-wrapper .slide img {
+  display: block;
+  max-width: 100%;
+}
+
+.slideshow .slides-wrapper .slide.active {
+  position: relative;
+  opacity: 1;
+  z-index: 10;
+  transition: opacity 600ms ease-in-out;
+}
+
+.slideshow .controll {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  width: 2.5rem;
+  height: 100%;
+  border: 0;
+  opacity: .25;
+  cursor: pointer;
+  outline: none;
+  z-index: 11;
+  transition: opacity 250ms ease-in-out;
+}
+
+.slideshow .controll svg {
+  width: 1rem;
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+.slideshow .controll.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.36) 0%, transparent 100%);
+}
+
+.slideshow .controll.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.36) 0%, transparent 100%);
+}
+
+.slideshow .indicators {
+  position: absolute;
+  bottom: .5rem;
+  left: 50%;
+  max-width: calc(100% - 7rem);
+  transform: translate3d(-50%, 0, 0);
+  background-color: rgba(0, 0, 0, 0.36);
+  border-radius: 4px;
+  cursor: default;
+  opacity: .25;
+  transition: opacity 250ms ease-in-out;
+  z-index: 11;
+}
+
+.slideshow .indicators button {
+  display: inline-block;
+  margin: .3rem;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: solid 2px #fff;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  opacity: .8;
+  transition: background-color 200ms ease-in-out;
+}
+
+.slideshow .indicators button.active {
+  background-color: #fff;
+}
+
+.slideshow:hover .controll, .slideshow:hover .indicators {
+  opacity: 1;
+}
