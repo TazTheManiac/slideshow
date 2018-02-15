@@ -1,4 +1,4 @@
-# slideshow
+# Slideshow
 A simple slideshow made with JavaScript
 
 # Licence
